@@ -23,7 +23,7 @@ App **Kanban** onde anota tarefas que são separadas em cartões: to do, doing, 
 - [x] Pseudo-elementos
 - [x] Positions;
 - JavaScript métodos:
-    [x] insertAdjacentHTML(); 
-    [x] .parentNode; 
-    [x] .remove(); 
-    [x] map();
+[x] insertAdjacentHTML(); 
+[x] .parentNode; 
+[x] .remove(); 
+[x] map();
