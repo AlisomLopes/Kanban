@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="preview.png" width="100%" />
+  <img src="git/preview.png" width="100%" />
 </p>
 
 ## 💻 Projeto
