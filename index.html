@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/index.css" />
+
+    <title>Kanban App</title>
+</head>
+
+<body>
+    <div id="background">
+        <img src="assets/background.jpg" alt="Imagem de fundo">
+    </div>
+
+    <div id="app">
+        
+        <header>
+            <span>
+                <h1>Kanban</h1>
+            </span>
+
+            <button type="button" id="btn_add_cardboard">
+                Adicionar outro cardboard
+            </button>
+        </header>
+        <section class="container__display_input_cardboard">
+            <button type="button" class="btn_close_display" id="close_display_cardboard">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="container__input_cardboard">
+                <input type="text" name="input__card" id="input__cardboard_name" placeholder="digite o nome do seu novo cardboard!" maxlength="25ch" autocomplete="off">
+
+                <span></span>
+
+                <button type="button" class="btn_send_cardboard">
+                    <span class="material-symbols-outlined">library_add</span>
+                    <span>Adicionar seu novo cardboard!</span>
+                </button>
+            </div>
+        </section> 
+
+        <main>
+            <div class="container__cardboard">
+                <div class="cardboard" id="to_do">
+                    <h1>to do</h1>
+                    <ul class="card__content_ul">
+                        <p>Nenhum card adicionado!</p>
+                    </ul>
+                    <button type="button" class="btn__plus" onclick="openDisplayInputCard(to_do)">
+                        <span class="material-symbols-outlined">add_circle</span>
+                        adicionar outro card
+                    </button>
+                </div>
+
+                <div class="cardboard" id="doing">
+                    <h1>doing</h1>
+                    <ul class="card__content_ul">
+                        <p>Nenhum card adicionado!</p>
+                    </ul>
+                    <button type="button" class="btn__plus" onclick="openDisplayInputCard(doing)">
+                        <span class="material-symbols-outlined">add_circle</span>
+                        adicionar outro card
+                    </button>
+                </div>
+
+                <div class="cardboard" id="done">
+                    <h1>done</h1>
+                    <ul class="card__content_ul">
+                        <p>Nenhum card adicionado!</p>
+                    </ul>
+                    <button type="button" class="btn__plus" onclick="openDisplayInputCard(done)">
+                        <span class="material-symbols-outlined">add_circle</span>
+                        adicionar outro card
+                    </button>
+                </div>
+            </div>
+        </main>
+        <section class="container__display_input_card">
+            <button type="button" class="btn_close_display" id="close_display_card">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="container__input_card">
+                <input type="text" name="input__card" id="input__card" placeholder="digite sua tarefa aqui!" maxlength="120ch" autocomplete="off">
+                <button type="button" class="btn_send_input_card" onclick=" addCard()">
+                    <span class="material-symbols-outlined">send</span>
+                </button>
+            </div>
+        </section>
+    </div>  
+
+    <script src="javascript/cardboard.js"></script>
+    <script src="javascript/card.js"></script>
+</body>
+</html>

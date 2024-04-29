@@ -1,0 +1,51 @@
+@import url(background.css);
+@import url(header.css);
+@import url(main.css);
+@import url(Display_inputCardboard.css);
+@import url(Display_inputCard.css);
+
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+:root {
+    --branco:       #EDF1F7;
+    --bege:         #ddd8c4ea;
+    --verde-claro:  #A3C9A8;
+    --verde:        #84B59F;
+    --verde-escuro: #69A297;
+    --azul:         #50808E;
+}
+
+body{
+    border: none;
+    overflow-x: hidden;
+}
+
+#app{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+}
+button{
+    cursor: pointer;
+ 
+    border-radius: 5px;
+
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+ul, li{
+    text-decoration: none;
+    list-style: none;
+}
